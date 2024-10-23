@@ -1,0 +1,65 @@
+.wrapper {
+    width: 350px;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 0 8px 10px lightgrey;
+}
+
+.avatar {
+    width: 100px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid grey;
+}
+
+.userName {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.userinfo {
+    color: gray;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dcdcdc;    
+    border-top: 3px solid grey;
+}
+
+.statsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px; 
+    /* border-top: 3px solid grey; */
+}
+
+.statsItem:not(:last-child) {
+    border-right: 3px solid grey;
+}
+
+.statsItemLabel {
+    color: #3c3c3c;
+}
+
+.statsItemQuantity {
+    font-size: 18px;
+    font-weight: 500;
+}
