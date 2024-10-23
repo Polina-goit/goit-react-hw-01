@@ -4,13 +4,13 @@ const Profile = ({
     username,
     tag,
     location,
-    avatar,
+    image,
     stats: { followers, views, likes },
 }) => {
     return (
         <div className={css.wrapper}>
             <div className={css.card}>
-                <img src={avatar} alt="User avatar" className={css.avatar} />
+                <img src={image} alt="User avatar" className={css.avatar} />
                 <p className={css.userName}>{username}</p>
                 <p className={css.userinfo}>&#64;{tag}</p>
                 <p className={css.userinfo}>{location}</p>
